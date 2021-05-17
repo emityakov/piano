@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DD5BD"
+    android:orientation="horizontal"
+    android:weightSum="7"
+    android:clipToPadding="false"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <com.nitishp.sheetmusic.MusicBarView
+        android:id="@+id/musBarView"
+        android:layout_width="0dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingClass,MissingConstraints"
+        tools:layout_editor_absoluteX="68dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="@id/musBarView"
+        app:layout_constraintStart_toStartOf="@id/musBarView"/>
+
+    <Button
+        android:id="@+id/buttonG"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/white"
+        android:stateListAnimator="@null"
+        android:text="G"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonF"
+        app:layout_constraintEnd_toStartOf="@id/buttonA"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/white"
+        android:stateListAnimator="@null"
+        android:text="D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonC"
+        app:layout_constraintEnd_toStartOf="@id/buttonE"/>
+
+    <Button
+        android:id="@+id/buttonF"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/white"
+        android:stateListAnimator="@null"
+        android:text="F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonE"
+        app:layout_constraintEnd_toStartOf="@id/buttonG"/>
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/white"
+        android:stateListAnimator="@null"
+        android:text="C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonD"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <Button
+        android:id="@+id/buttonE"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:stateListAnimator="@null"
+        android:background="@android:color/white"
+        android:text="E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonD"
+        app:layout_constraintEnd_toStartOf="@id/buttonF"/>
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/white"
+        android:stateListAnimator="@null"
+        android:text="A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonG"
+        app:layout_constraintEnd_toStartOf="@id/buttonB"/>
+
+    <Button
+        android:id="@+id/buttonCC2"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/white"
+        android:stateListAnimator="@null"
+        android:text="C2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonB"/>
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/white"
+        android:stateListAnimator="@null"
+        android:text="B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonCC2"
+        app:layout_constraintStart_toEndOf="@id/buttonA" />
+
+    <Button
+        android:id="@+id/bb1"
+        android:layout_width="25dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="62dp"
+        android:background="@android:color/black"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonD"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonC"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bb4"
+        android:layout_width="25dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="279dp"
+        android:layout_marginBottom="62dp"
+        android:background="@android:color/black"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonA"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonG"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bb2"
+        android:layout_width="25dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="62dp"
+        android:background="@android:color/black"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonE"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonD"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bb5"
+        android:layout_width="25dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="279dp"
+        android:layout_marginBottom="62dp"
+        android:background="@android:color/black"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonA"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bb3"
+        android:layout_width="25dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="62dp"
+        android:background="@android:color/black"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonG"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonF"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PianoTime</string>
+    <string name="sixteenth">SIXTEENTH</string>
+    <string name="half">HALF</string>
+    <string name="whole">WHOLE</string>
+    <string name="eighth">EIGHTH</string>
+    <string name="fourth">FOURTH</string>
+    <string name="durarion">Duration</string>
+</resources>
